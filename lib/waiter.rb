@@ -24,5 +24,12 @@ class Waiter
     end 
   end 
   
+  def best_tipper
+    best_tipped_meals = meals.max do |meal_a, meal_b|
+      meal_a.tip <=> meal.b.tip 
+    end 
+    best_tipped_meals.customer
+  end 
+      
   
 end
