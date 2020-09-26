@@ -1,6 +1,6 @@
 class Customer
   
-attr_accessor :name :age 
+attr_accessor :name, :age 
 
 def intialize (name, age)
   @name = name 
