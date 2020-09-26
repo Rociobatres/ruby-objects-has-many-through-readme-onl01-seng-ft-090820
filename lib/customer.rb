@@ -2,15 +2,16 @@ class Customer
   
 attr_accessor :name, :age 
 
-def intialize
+@@all = []
+
+def intialize(name, age)
   @name = name 
   @age  = age 
+  @all << self 
 end 
 
 def self.all 
-  @@all = []
-  @@all << self 
-  @all 
+  @@all 
 end 
 
   
