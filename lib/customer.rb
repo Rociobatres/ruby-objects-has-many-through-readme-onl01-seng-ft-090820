@@ -9,7 +9,7 @@ end
 
 def self.all 
   @@all = []
-  @@all << self.new 
+  @@all << self 
   @all 
 end 
 
